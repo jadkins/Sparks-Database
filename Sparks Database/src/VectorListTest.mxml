@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600"
+			   creationComplete="application1_creationCompleteHandler(event)">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import data.VectorList;
+			
+			import mx.events.FlexEvent;
+			[Bindable]
+			protected var testList:VectorList;
+			
+			protected function application1_creationCompleteHandler(event:FlexEvent):void
+			{
+				var vector:Vector.<String> = new Vector.<String>();
+				vector.push( "test1" );
+				vector.push( "test2" );
+				vector.push( "test3" );
+				vector.push( "test4" );
+				vector.push( "test5" );
+				vector.push( "test6" );
+				
+				testList = new VectorList( vector );
+				
+				testList.removeItemAt( 2 );
+				testList.addItemAt( "test7", 2 );
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<s:List dataProvider="{testList}" />
+</s:Application>

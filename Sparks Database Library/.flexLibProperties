@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="data.interfaces.IGear"/>
+    <classEntry path="data.interfaces.IWeapon"/>
+    <classEntry path="data.interfaces.IExplosive"/>
+    <classEntry path="data.interfaces.IArmor"/>
+    <classEntry path="data.delegates.IEquipmentXMLFactory"/>
+    <classEntry path="data.delegates.IVehicleXMLFactory"/>
+    <classEntry path="data.interfaces.IEquipment"/>
+    <classEntry path="data.interfaces.IAbstractVehicle"/>
+    <classEntry path="data.interfaces.IVehicle"/>
+    <classEntry path="data.interfaces.IStarship"/>
+    <classEntry path="data.interfaces.ISensorSuite"/>
+    <classEntry path="data.interfaces.ISource"/>
+    <classEntry path="data.VectorList"/>
+    <classEntry path="data.interfaces.ISensor"/>
+    <classEntry path="data.interfaces.IAbstractVehicleWeapon"/>
+    <classEntry path="data.interfaces.IVehicleWeapon"/>
+    <classEntry path="data.interfaces.IStarshipWeapon"/>
+    <classEntry path="data.delegates.IEquipmentFactory"/>
+    <classEntry path="data.delegates.IVehicleFactory"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
