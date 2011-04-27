@@ -1,6 +1,6 @@
-package data.interfaces
+package data.equipment.interfaces
 {
-	public interface IArmor extends IGear
+	public interface IArmor extends IEquipment
 	{
 		function get protection():Vector.<String>;
 		function set protection( value:Vector.<String> ):void;

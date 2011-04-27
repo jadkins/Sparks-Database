@@ -1,6 +1,6 @@
-package data.interfaces
+package data.equipment.interfaces
 {
-	public interface IAbstractVehicle extends IEquipment
+	public interface IAbstractVehicle extends IAbstractEquipment
 	{
 		function get craft():String;
 		function set craft( value:String ):void;

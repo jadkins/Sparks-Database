@@ -1,6 +1,6 @@
-package data.interfaces
+package data.equipment.interfaces
 {
-	public interface ISensor
+	public interface ISensor extends IXMLObject
 	{
 		function get range():String;
 		function set range( value:String ):void;

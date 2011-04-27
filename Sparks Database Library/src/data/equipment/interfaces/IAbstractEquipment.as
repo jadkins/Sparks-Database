@@ -1,11 +1,7 @@
-package data.interfaces
+package data.equipment.interfaces
 {
-	public interface IEquipment
+	public interface IAbstractEquipment extends IDescribable
 	{
-		function get id():String;
-		function set id( value:String ):void;
-		function get name():String;
-		function set name( value:String ):void;
 		function get type():String;
 		function set type( value:String ):void;
 		function get scale():String;
@@ -20,7 +16,5 @@ package data.interfaces
 		function set campaignNotes( value:String ):void;
 		function get sources():Vector.<ISource>;
 		function set sources( value:Vector.<ISource> ):void;
-		function get xml():XML;
-		function set xml( value:XML ):void;
 	}
 }

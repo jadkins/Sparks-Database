@@ -1,6 +1,6 @@
-package data.interfaces
+package data.equipment.interfaces
 {
-	public interface IGear extends IEquipment
+	public interface IEquipment extends IAbstractEquipment
 	{
 		function get model():String;
 		function set model( value:String ):void;

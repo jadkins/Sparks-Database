@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
-    <classEntry path="data.interfaces.IGear"/>
-    <classEntry path="data.interfaces.IWeapon"/>
-    <classEntry path="data.interfaces.IExplosive"/>
-    <classEntry path="data.interfaces.IArmor"/>
+    <classEntry path="data.equipment.interfaces.IEquipment"/>
+    <classEntry path="data.equipment.interfaces.IWeapon"/>
+    <classEntry path="data.equipment.interfaces.IExplosive"/>
+    <classEntry path="data.equipment.interfaces.IArmor"/>
     <classEntry path="data.delegates.IEquipmentXMLFactory"/>
     <classEntry path="data.delegates.IVehicleXMLFactory"/>
-    <classEntry path="data.interfaces.IEquipment"/>
-    <classEntry path="data.interfaces.IAbstractVehicle"/>
-    <classEntry path="data.interfaces.IVehicle"/>
-    <classEntry path="data.interfaces.IStarship"/>
-    <classEntry path="data.interfaces.ISensorSuite"/>
-    <classEntry path="data.interfaces.ISource"/>
+    <classEntry path="data.equipment.interfaces.IAbstractEquipment"/>
+    <classEntry path="data.equipment.interfaces.IAbstractVehicle"/>
+    <classEntry path="data.equipment.interfaces.IVehicle"/>
+    <classEntry path="data.equipment.interfaces.IStarship"/>
+    <classEntry path="data.equipment.interfaces.ISensorSuite"/>
+    <classEntry path="data.equipment.interfaces.ISource"/>
     <classEntry path="data.VectorList"/>
-    <classEntry path="data.interfaces.ISensor"/>
-    <classEntry path="data.interfaces.IAbstractVehicleWeapon"/>
-    <classEntry path="data.interfaces.IVehicleWeapon"/>
-    <classEntry path="data.interfaces.IStarshipWeapon"/>
+    <classEntry path="data.equipment.interfaces.ISensor"/>
+    <classEntry path="data.equipment.interfaces.IAbstractVehicleWeapon"/>
+    <classEntry path="data.equipment.interfaces.IVehicleWeapon"/>
+    <classEntry path="data.equipment.interfaces.IStarshipWeapon"/>
     <classEntry path="data.delegates.IEquipmentFactory"/>
     <classEntry path="data.delegates.IVehicleFactory"/>
+    <classEntry path="data.equipment.AbstractEquipment"/>
+    <classEntry path="data.equipment.interfaces.IReference"/>
+    <classEntry path="data.equipment.interfaces.IXMLObject"/>
+    <classEntry path="data.equipment.interfaces.IDescribable"/>
+    <classEntry path="data.XMLItem"/>
+    <classEntry path="data.Describable"/>
+    <classEntry path="data.Source"/>
+    <classEntry path="data.equipment.Equipment"/>
+    <classEntry path="commands.ICommand"/>
+    <classEntry path="commands.CommandBase"/>
+    <classEntry path="data.delegates.EquipmentFactory"/>
+    <classEntry path="data.delegates.EquipmentXMLFactory"/>
+    <classEntry path="commands.GetEquipmentCommand"/>
+    <classEntry path="data.enums.CommandURL"/>
+    <classEntry path="data.equipment.Weapon"/>
+    <classEntry path="utils.DataUtils"/>
+    <classEntry path="commands.GetWeaponsCommand"/>
+    <classEntry path="data.equipment.Armor"/>
+    <classEntry path="data.equipment.Sensor"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

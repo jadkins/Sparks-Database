@@ -1,6 +1,6 @@
-package data.interfaces
+package data.equipment.interfaces
 {
-	public interface IAbstractVehicleWeapon extends IEquipment
+	public interface IAbstractVehicleWeapon extends IAbstractEquipment
 	{
 		function get fireArc():Vector.<String>;
 		function set fireArc( value:Vector.<String> ):void;

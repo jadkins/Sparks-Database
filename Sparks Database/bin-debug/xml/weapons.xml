@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weapons>
+	<weapon>
+		<id>WEP1</id>
+		<name>Basic Blaster Carbine</name> 
+		<model>SoroSuub QuickSnap 36T</model> 
+		<description>These weapons are shorter and less accurate than blaster rifles, the weapons they are based upon. However, they are rugged and reliable and malfunctions are very rare. These weapons are less advanced than blaster rifles, and older models can often be found at greatly discounted prices.</description>
+		<type>Blaster Carbine</type> 
+		<scale>Character</scale>
+		<skill>Blaster: Blaster Carbine</skill>
+		<ammo>100</ammo>
+		<cost>900 (power packs: 25)</cost>
+		<availabilityRarity>2</availabilityRarity>
+		<availabilityLegal>F,R,X</availabilityLegal>
+		<fireRate>1</fireRate>
+		<range>3-25/50/250</range>
+		<damage>5D</damage>
+		<gameNotes>At long range, increase difficulty by +5</gameNotes>
+		<campaignNotes/>
+		<sources>
+			<source>
+			 	<id>SRC3</id>
+			 	<referenceId>REF1</referenceId> 
+			 	<pages>231</pages>
+			</source>
+		</sources>
+	</weapon>
+	<weapon>
+		<id>WEP2</id>
+		<name>Basic Blaster Pistol</name> 
+		<model>BlasTech DL-18 Blaster Pistol</model> 
+		<description>This is the most common weapon in the galaxy. It is popular with urban police forces, traders, and anyone else who needs to pack respectable firepower in a compact package. Ownership of these weapons is restricted in many systems.</description>
+		<type>Blaster Pistol</type> 
+		<scale>Character</scale>
+		<skill>Blaster: Blaster Pistol</skill>
+		<ammo>100</ammo>
+		<cost>500 (power packs: 25)</cost>
+		<availabilityRarity>1</availabilityRarity>
+		<availabilityLegal>F,R,X</availabilityLegal>
+		<fireRate>1</fireRate>
+		<range>3-10/30/120</range>
+		<damage>4D</damage>
+		<gameNotes></gameNotes>
+		<campaignNotes/>
+		<sources>
+			<source>
+				<id>SRC4</id>
+			 	<referenceId>REF1</referenceId> 
+			 	<pages>229-231</pages>
+			</source>
+		</sources> 
+	</weapon>
+	<weapon></weapon>
+	<weapon></weapon>
+</weapons>

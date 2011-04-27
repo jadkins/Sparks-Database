@@ -1,4 +1,4 @@
-package data.interfaces
+package data.equipment.interfaces
 {
 	public interface IExplosive extends IWeapon
 	{

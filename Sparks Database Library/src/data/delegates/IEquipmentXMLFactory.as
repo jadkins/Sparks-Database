@@ -1,18 +1,21 @@
 package data.delegates
 {
-	import data.interfaces.IArmor;
-	import data.interfaces.IExplosive;
-	import data.interfaces.IGear;
-	import data.interfaces.ISensor;
-	import data.interfaces.ISensorSuite;
-	import data.interfaces.IStarshipWeapon;
-	import data.interfaces.IVehicleWeapon;
-	import data.interfaces.IWeapon;
+	import data.equipment.interfaces.IArmor;
+	import data.equipment.interfaces.IEquipment;
+	import data.equipment.interfaces.IExplosive;
+	import data.equipment.interfaces.ISensor;
+	import data.equipment.interfaces.ISensorSuite;
+	import data.equipment.interfaces.IStarshipWeapon;
+	import data.equipment.interfaces.IVehicleWeapon;
+	import data.equipment.interfaces.IWeapon;
 
 	public interface IEquipmentXMLFactory
 	{
-		function createEquipment( xml:XML ):IGear;
+		function createEquipmentList( xml:XML ):Vector.<IEquipment>;
+		function createEquipment( xml:XML ):IEquipment;
+		function createArmorList( xml:XML ):Vector.<IArmor>;
 		function createArmor( xml:XML ):IArmor;
+		function createWeaponList( xml:XML ):Vector.<IWeapon>;
 		function createWeapon( xml:XML ):IWeapon;
 		function createSensor( xml:XML ):ISensor;
 		function createSensorSuite( xml:XML ):ISensorSuite;

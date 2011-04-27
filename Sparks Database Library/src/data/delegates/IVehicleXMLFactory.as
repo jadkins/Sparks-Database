@@ -1,7 +1,7 @@
 package data.delegates
 {
-	import data.interfaces.IStarship;
-	import data.interfaces.IVehicle;
+	import data.equipment.interfaces.IStarship;
+	import data.equipment.interfaces.IVehicle;
 
 	public interface IVehicleXMLFactory
 	{

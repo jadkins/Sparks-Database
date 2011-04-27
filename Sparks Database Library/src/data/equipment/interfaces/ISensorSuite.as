@@ -1,6 +1,6 @@
-package data.interfaces
+package data.equipment.interfaces
 {
-	public interface ISensorSuite extends IEquipment
+	public interface ISensorSuite extends IAbstractEquipment
 	{
 		function get passive():ISensor;
 		function set passive( value:ISensor ):void;
