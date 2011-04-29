@@ -7,7 +7,7 @@ package data.equipment
 	
 	public class Weapon extends Equipment implements IWeapon
 	{
-		public static const NAME:String = "weapon";
+		private const NAME:String = "weapon";
 		
 		private var _ammo:Vector.<String>;
 		private var _fireRate:Vector.<String>;
@@ -15,13 +15,13 @@ package data.equipment
 		private var _range:Vector.<String>;
 		private var _damage:Vector.<String>;
 		
-		public function Weapon( name:String="", description:String="", type:String="", scale:String="", 
+		public function Weapon( xmlRoot:String = NAME, name:String="", description:String="", type:String="", scale:String="", 
 								skill:String="", cost:String="", availabilityRarity:Vector.<String> = null,
 								availabilityLegal:Vector.<String> = null, ammo:Vector.<String> = null, fireRate:Vector.<String> = null,
 								difficulty:Vector.<String> = null, damage:Vector.<String> = null, range:Vector.<String> = null,
 								gameNotes:String = "", campaignNotes:String = "", sources:Vector.<ISource> = null)
 		{
-			super(name, description, model, type, scale, skill, availabilityRarity, availabilityLegal, cost, gameNotes, campaignNotes, sources);
+			super( xmlRoot, name, description, model, type, scale, skill, availabilityRarity, availabilityLegal, cost, gameNotes, campaignNotes, sources);
 			
 			this.ammo = ammo;
 			this.fireRate = fireRate;

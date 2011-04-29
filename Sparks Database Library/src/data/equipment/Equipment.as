@@ -12,12 +12,12 @@ package data.equipment
 		private var _availabilityRarity:Vector.<String>;
 		private var _availabilityLegal:Vector.<String>;
 		
-		public function Equipment( name:String = "", description:String = "", model:String = "", type:String = "", 
+		public function Equipment( xmlRoot:String = NAME, name:String = "", description:String = "", model:String = "", type:String = "", 
 								   scale:String = "", skill:String = "", availbilityRarity:Vector.<String> = null, 
 								   availbilityLegal:Vector.<String> = null, cost:String = "", gamesNotes:String = "", 
 								   campaignNotes:String = "", sources:Vector.<ISource> = null )
 		{
-			super(name, description, type, scale, skill, cost, gamesNotes, campaignNotes, sources);
+			super(xmlRoot, name, description, type, scale, skill, cost, gamesNotes, campaignNotes, sources);
 			
 			this.model = model;
 			this.availabilityRarity = availbilityRarity;

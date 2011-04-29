@@ -22,21 +22,21 @@ package data.delegates
 		public function createEquipment( name:String, model:String, description:String, type:String, scale:String, skill:String, availabilityRarity:Vector.<String>,
 										 availabilityLegal:Vector.<String>,  cost:String, gameNotes:String, campaignNotes:String, sources:Vector.<ISource> ):IEquipment
 		{
-			return new Equipment( name, description, model, type, scale, skill, availabilityRarity, availabilityLegal, cost, gameNotes, 
+			return new Equipment( "item", name, description, model, type, scale, skill, availabilityRarity, availabilityLegal, cost, gameNotes, 
 				campaignNotes, sources );
 		}
 		
 		public function createArmor(name:String, description:String, type:String, scale:String, skill:String, availabilityRarity:Vector.<String>,
 									availabilityLegal:Vector.<String>, cost:String, protection:Vector.<String>, penalties:Vector.<String>, gameNotes:String, campaignNotes:String, sources:Vector.<ISource>):IArmor
 		{
-			return new Armor(name, description, type, scale, skill, availabilityRarity,
+			return new Armor( "armor", name, description, type, scale, skill, availabilityRarity,
 				availabilityLegal, cost, protection, penalties, gameNotes, campaignNotes, sources);
 		}
 		
 		public function createWeapon(name:String, description:String, type:String, scale:String, skill:String, cost:String, availabilityRarity:Vector.<String>,
 									 availabilityLegal:Vector.<String>, ammo:Vector.<String>, fireRate:Vector.<String>, difficulty:Vector.<String>, damage:Vector.<String>, range:Vector.<String>, gameNotes:String, campaignNotes:String, sources:Vector.<ISource>):IWeapon
 		{
-			return new Weapon( name, description, type, scale, skill, cost, availabilityRarity,
+			return new Weapon( "weapon", name, description, type, scale, skill, cost, availabilityRarity,
 				availabilityLegal, ammo, fireRate, difficulty, damage, range, gameNotes, campaignNotes, sources)
 		}
 		

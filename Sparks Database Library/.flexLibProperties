@@ -22,7 +22,7 @@
     <classEntry path="data.delegates.IVehicleFactory"/>
     <classEntry path="data.equipment.AbstractEquipment"/>
     <classEntry path="data.equipment.interfaces.IReference"/>
-    <classEntry path="data.equipment.interfaces.IXMLObject"/>
+    <classEntry path="data.equipment.interfaces.IXMLItem"/>
     <classEntry path="data.equipment.interfaces.IDescribable"/>
     <classEntry path="data.XMLItem"/>
     <classEntry path="data.Describable"/>
@@ -39,6 +39,7 @@
     <classEntry path="commands.GetWeaponsCommand"/>
     <classEntry path="data.equipment.Armor"/>
     <classEntry path="data.equipment.Sensor"/>
+    <classEntry path="data.equipment.SensorSuite"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

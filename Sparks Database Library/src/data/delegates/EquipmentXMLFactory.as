@@ -22,7 +22,7 @@ package data.delegates
 		{
 			var list:Vector.<IEquipment> = new Vector.<IEquipment>();
 			
-			for each( var item:XML in xml.child( Equipment.NAME ) )
+			for each( var item:XML in xml.child( "item" ) )
 			{
 				var equipment:IEquipment = createEquipment( item );
 				list.push( equipment );
@@ -42,7 +42,7 @@ package data.delegates
 		{
 			var list:Vector.<IArmor> = new Vector.<IArmor>();
 			
-			for each( var item:XML in xml.child( Armor.NAME ) )
+			for each( var item:XML in xml.child( "armor" ) )
 			{
 				var equipment:IArmor = createArmor( item );
 				list.push( equipment );
@@ -62,7 +62,7 @@ package data.delegates
 		{
 			var list:Vector.<IWeapon> = new Vector.<IWeapon>();
 			
-			for each( var item:XML in xml.child( Weapon.NAME ) )
+			for each( var item:XML in xml.child( "weapon" ) )
 			{
 				var equipment:IWeapon = createWeapon( item );
 				list.push( equipment );

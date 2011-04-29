@@ -1,6 +1,6 @@
 package data.equipment.interfaces
 {
-	public interface ISource extends IXMLObject
+	public interface ISource extends IXMLItem
 	{
 		function get sourceId():String;
 		function get referenceId():String;

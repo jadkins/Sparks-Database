@@ -25,19 +25,6 @@
 			
 			protected function application1_creationCompleteHandler(event:FlexEvent):void
 			{
-				var vector:Vector.<String> = new Vector.<String>();
-				vector.push( "test1" );
-				vector.push( "test2" );
-				vector.push( "test3" );
-				vector.push( "test4" );
-				vector.push( "test5" );
-				vector.push( "test6" );
-				
-				testList = new VectorList( vector );
-				
-				testList.removeItemAt( 2 );
-				testList.addItemAt( "test7", 2 );
-				
 				var testCommand:CommandBase = new GetEquipmentCommand();
 				testCommand.addResponder( new mx.rpc.Responder( result, null ) );
 				testCommand.execute();

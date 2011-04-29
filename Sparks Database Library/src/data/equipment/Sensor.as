@@ -5,16 +5,12 @@ package data.equipment
 	
 	public class Sensor extends XMLItem implements ISensor
 	{
-		public static const NAME:String = "system";
-		
-		public function Sensor( range:String, strength:String )
+		public function Sensor( name:String = "", range:String = "", strength:String = "" )
 		{
+			super( name );
 			
-		}
-		
-		override public function get xmlRoot():String
-		{
-			return NAME;
+			this.range = range;
+			this.strength = strength;
 		}
 		
 		public function get range():String

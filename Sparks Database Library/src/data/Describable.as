@@ -4,9 +4,9 @@ package data
 	
 	public class Describable extends XMLItem implements IDescribable
 	{
-		public function Describable( name:String = "", description:String = "" )
+		public function Describable( xmlRoot:String = "", name:String = "", description:String = "" )
 		{
-			super();
+			super( xmlRoot );
 			
 			this.name = name;
 			this.description = description;

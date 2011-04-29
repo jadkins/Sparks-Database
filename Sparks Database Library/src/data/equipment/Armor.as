@@ -7,20 +7,15 @@ package data.equipment
 	
 	public class Armor extends Equipment implements IArmor
 	{
-		public static const NAME:String = "armor";
+		private const NAME:String = "armor";
 		
 		private var _protection:Vector.<String>;
 		private var _penalties:Vector.<String>;
 		
-		public function Armor(name:String = "", description:String = "", type:String = "", scale:String = "", skill:String = "", availabilityRarity:Vector.<String> = null,
+		public function Armor( xmlRoot:String = NAME, name:String = "", description:String = "", type:String = "", scale:String = "", skill:String = "", availabilityRarity:Vector.<String> = null,
 							  availabilityLegal:Vector.<String> = null, cost:String = "", protection:Vector.<String> = null, penalties:Vector.<String> = null, gameNotes:String = "", campaignNotes:String = "", sources:Vector.<ISource> = null)
 		{
-			super(name, description, model, type, scale, skill, availabilityLegal, availabilityLegal, cost, gameNotes, campaignNotes, sources);
-		}
-		
-		override public function get xmlRoot():String
-		{
-			return NAME;
+			super( xmlRoot, name, description, model, type, scale, skill, availabilityLegal, availabilityLegal, cost, gameNotes, campaignNotes, sources);
 		}
 		
 		public function get protection():Vector.<String>

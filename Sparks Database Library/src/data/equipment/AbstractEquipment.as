@@ -9,10 +9,10 @@ package data.equipment
 	{
 		private var _sources:Vector.<ISource>;
 		
-		public function AbstractEquipment( name:String = "", description:String = "", type:String = "", scale:String = "", skill:String = "",
+		public function AbstractEquipment( xmlRoot:String = "", name:String = "", description:String = "", type:String = "", scale:String = "", skill:String = "",
 										   cost:String = "", gamesNotes:String = "", campaignNotes:String = "", sources:Vector.<ISource> = null )
 		{
-			super( name, description );
+			super( xmlRoot, name, description );
 			
 			this.type = type;
 			this.scale = scale;

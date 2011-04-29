@@ -1,6 +1,6 @@
 package data.equipment.interfaces
 {
-	public interface IDescribable extends IXMLObject
+	public interface IDescribable extends IXMLItem
 	{
 		function get id():String;
 		function get name():String;
