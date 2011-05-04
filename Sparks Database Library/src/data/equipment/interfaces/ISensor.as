@@ -1,7 +1,13 @@
-package data.equipment.interfaces
-{
-	public interface ISensor extends IXMLItem
-	{
+//------------------------------------------------------------------------------
+//
+//   Copyright 2011 
+//   All rights reserved. 
+//
+//------------------------------------------------------------------------------
+
+package data.equipment.interfaces {
+
+	public interface ISensor extends IXMLItem {
 		function get range():String;
 		function set range( value:String ):void;
 		function get strength():String;

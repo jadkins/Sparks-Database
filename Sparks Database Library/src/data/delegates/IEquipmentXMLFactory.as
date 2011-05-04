@@ -1,5 +1,12 @@
-package data.delegates
-{
+//------------------------------------------------------------------------------
+//
+//   Copyright 2011 
+//   All rights reserved. 
+//
+//------------------------------------------------------------------------------
+
+package data.delegates {
+
 	import data.equipment.interfaces.IArmor;
 	import data.equipment.interfaces.IEquipment;
 	import data.equipment.interfaces.IExplosive;
@@ -9,18 +16,17 @@ package data.delegates
 	import data.equipment.interfaces.IVehicleWeapon;
 	import data.equipment.interfaces.IWeapon;
 
-	public interface IEquipmentXMLFactory
-	{
-		function createEquipmentList( xml:XML ):Vector.<IEquipment>;
-		function createEquipment( xml:XML ):IEquipment;
-		function createArmorList( xml:XML ):Vector.<IArmor>;
+	public interface IEquipmentXMLFactory {
 		function createArmor( xml:XML ):IArmor;
-		function createWeaponList( xml:XML ):Vector.<IWeapon>;
-		function createWeapon( xml:XML ):IWeapon;
+		function createArmorList( xml:XML ):Vector.<IArmor>;
+		function createEquipment( xml:XML ):IEquipment;
+		function createEquipmentList( xml:XML ):Vector.<IEquipment>;
+		function createExplosive( xml:XML ):IExplosive;
 		function createSensor( xml:XML ):ISensor;
 		function createSensorSuite( xml:XML ):ISensorSuite;
-		function createExplosive( xml:XML ):IExplosive;
-		function createVehicleWeapon( xml:XML ):IVehicleWeapon;
 		function createStarshipWeapon( xml:XML ):IStarshipWeapon;
+		function createVehicleWeapon( xml:XML ):IVehicleWeapon;
+		function createWeapon( xml:XML ):IWeapon;
+		function createWeaponList( xml:XML ):Vector.<IWeapon>;
 	}
 }

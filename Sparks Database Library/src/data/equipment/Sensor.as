@@ -1,64 +1,83 @@
-package data.equipment
-{
+//------------------------------------------------------------------------------
+//
+//   Copyright 2011 
+//   All rights reserved. 
+//
+//------------------------------------------------------------------------------
+
+package data.equipment {
+
 	import data.XMLItem;
 	import data.equipment.interfaces.ISensor;
-	
-	public class Sensor extends XMLItem implements ISensor
-	{
-		public function Sensor( name:String = "", range:String = "", strength:String = "" )
-		{
-			super( name );
-			
-			this.range = range;
-			this.strength = strength;
-		}
-		
-		public function get range():String
-		{
-			if( xml && xml.range && xml.range != "" )
-			{
+
+	public class Sensor extends XMLItem implements ISensor {
+
+		//----------------------------------------------------------
+		//
+		//
+		//   Public Functions 
+		//
+		//
+		//----------------------------------------------------------
+
+		public function get range():String {
+
+			if( xml && xml.range && xml.range != "" ) {
 				return xml.range;
 			}
-			
+
 			return "";
 		}
-		
-		public function set range( value:String ):void
-		{
-			if( !xml )
-			{
+
+		public function set range( value:String ):void {
+
+			if( !xml ) {
 				throwXmlError( "range" );
 				return;
 			}
-			
+
 			if( xml && xml.range )
 				xml.range = value;
 			else
 				xml.appendChild( "<range>" + value + "</range>" );
 		}
-		
-		public function get strength():String
-		{
-			if( xml && xml.strength && xml.strength != "" )
-			{
+
+		public function get strength():String {
+
+			if( xml && xml.strength && xml.strength != "" ) {
 				return xml.strength;
 			}
-			
+
 			return "";
 		}
-		
-		public function set strength( value:String ):void
-		{
-			if( !xml )
-			{
+
+		public function set strength( value:String ):void {
+
+			if( !xml ) {
 				throwXmlError( "strength" );
 				return;
 			}
-			
+
 			if( xml && xml.strength )
 				xml.strength = value;
 			else
 				xml.appendChild( "<strength>" + value + "</strength>" );
+		}
+
+		//----------------------------------------------------------
+		//
+		//
+		//   Constructor 
+		//
+		//
+		//----------------------------------------------------------
+
+		public function Sensor( name:String="", range:String="", strength:String="" ) {
+
+			super( name );
+
+			this.range = range;
+			this.strength = strength;
 		}
 	}
 }

@@ -15,7 +15,6 @@
     <classEntry path="data.equipment.interfaces.ISource"/>
     <classEntry path="data.VectorList"/>
     <classEntry path="data.equipment.interfaces.ISensor"/>
-    <classEntry path="data.equipment.interfaces.IAbstractVehicleWeapon"/>
     <classEntry path="data.equipment.interfaces.IVehicleWeapon"/>
     <classEntry path="data.equipment.interfaces.IStarshipWeapon"/>
     <classEntry path="data.delegates.IEquipmentFactory"/>
@@ -40,6 +39,14 @@
     <classEntry path="data.equipment.Armor"/>
     <classEntry path="data.equipment.Sensor"/>
     <classEntry path="data.equipment.SensorSuite"/>
+    <classEntry path="data.equipment.Explosive"/>
+    <classEntry path="data.Reference"/>
+    <classEntry path="data.vehicles.weapons.VehicleWeapon"/>
+    <classEntry path="data.vehicles.weapons.StarshipWeapon"/>
+    <classEntry path="data.vehicles.AbstractVehicle"/>
+    <classEntry path="data.vehicles.Vehicle"/>
+    <classEntry path="data.vehicles.Starship"/>
+    <classEntry path="data.equipment.interfaces.IPlayerCraftable"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

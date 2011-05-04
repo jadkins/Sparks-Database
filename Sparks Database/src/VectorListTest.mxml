@@ -15,6 +15,7 @@
 			import data.VectorList;
 			import data.delegates.EquipmentXMLFactory;
 			import data.delegates.IEquipmentXMLFactory;
+			import data.equipment.Equipment;
 			import data.equipment.interfaces.IEquipment;
 			import data.equipment.interfaces.IWeapon;
 			
@@ -36,6 +37,8 @@
 				var equipment:Vector.<IEquipment> = factory.createEquipmentList( test.result );
 				
 				testList = new VectorList( equipment );
+				
+				var testEquipment:Equipment = new Equipment( "testItem", "Some item", "This is some item", "A special model", "some type", "some scale", "some skill" ); 
 			}
 			
 		]]>
