@@ -47,6 +47,13 @@
     <classEntry path="data.vehicles.Vehicle"/>
     <classEntry path="data.vehicles.Starship"/>
     <classEntry path="data.equipment.interfaces.IPlayerCraftable"/>
+    <classEntry path="data.players.interfaces.IPlayer"/>
+    <classEntry path="data.players.interfaces.IAddress"/>
+    <classEntry path="data.players.interfaces.IPlayerName"/>
+    <classEntry path="data.players.interfaces.IMembership"/>
+    <classEntry path="data.modules.IModule"/>
+    <classEntry path="data.conventions.IConvention"/>
+    <classEntry path="data.conventions.ISlot"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
